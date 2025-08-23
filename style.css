@@ -51,6 +51,13 @@ body::before {
   border-radius: 99px;
   border: 3px solid transparent;
   background: rgba(0, 0, 0, 0.15);
+  outline: none;
+  font-weight: 500;
+  transition: .25s border;
+}
+
+.city-input:focus {
+  border: 3px solid rgba(0, 0, 0, .15);
 }
 
 .city-input::placeholder {
