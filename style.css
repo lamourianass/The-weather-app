@@ -47,6 +47,7 @@ body::before {
 
 .input-container {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .city-input {
@@ -78,4 +79,10 @@ body::before {
   display: flex;
   border: none;
   cursor: pointer;
+}
+
+/* SECTION: WEATHER INFO */
+
+.weather-info {
+  border: solid;
 }
