@@ -141,3 +141,7 @@ body::before {
 .forecast-items-container {
   display: flex;
 }
+
+.forecast-item {
+  min-width: 70px;
+}
