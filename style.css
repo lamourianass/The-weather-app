@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  font-weight: 600;
 }
 
 body {
@@ -26,6 +27,13 @@ body::before {
   height: 100dvh;
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
+}
+
+/* UTILITIES */
+
+.regular-txt {
+  font-weight: 400;
+
 }
 
 .main-container {
@@ -84,7 +92,7 @@ body::before {
 /* SECTION: WEATHER INFO */
 
 .weather-info {
-  border: solid;
+  
 }
 
 .location-date-container {
