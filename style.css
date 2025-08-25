@@ -92,7 +92,9 @@ body::before {
 /* SECTION: WEATHER INFO */
 
 .weather-info {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .location-date-container {
