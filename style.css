@@ -122,3 +122,9 @@ body::before {
 .weather-summary-info {
   text-align: end;
 }
+
+.weather-conditions-container {
+  display: flex;
+  justify-content: space-between;
+
+}
