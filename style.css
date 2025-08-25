@@ -145,6 +145,10 @@ body::before {
   padding-bottom: 12px;
 }
 
+.forecast-items-container::-webkit-scrollbar {
+  height: 8px;
+}
+
 .forecast-item {
   min-width: 70px;
   background: rgba(255, 255, 255, 0.1);
