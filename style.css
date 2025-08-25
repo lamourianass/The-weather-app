@@ -86,3 +86,10 @@ body::before {
 .weather-info {
   border: solid;
 }
+
+.location-date-container {
+  border: solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
