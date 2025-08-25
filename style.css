@@ -88,8 +88,14 @@ body::before {
 }
 
 .location-date-container {
-  border: solid blue;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
