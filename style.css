@@ -126,5 +126,10 @@ body::before {
 .weather-conditions-container {
   display: flex;
   justify-content: space-between;
+}
 
+.condition-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
