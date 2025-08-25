@@ -180,3 +180,10 @@ body::before {
   width: 35px;
   height: 35px;
 }
+
+/* SECTION MESSAGE */
+
+.message-img {
+  height: 180px;
+  width: fit-content;
+}
