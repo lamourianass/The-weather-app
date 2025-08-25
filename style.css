@@ -141,6 +141,8 @@ body::before {
 .forecast-items-container {
   display: flex;
   gap: 15px;
+  overflow: scroll;
+  padding-bottom: 12px;
 }
 
 .forecast-item {
