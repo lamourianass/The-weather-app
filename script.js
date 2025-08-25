@@ -9,4 +9,4 @@ searchBtn.addEventListener('click', () => {
   }
 })
 
-cityInput.addEventListener('markdown', () => {})
+cityInput.addEventListener('keydown', () => {})
