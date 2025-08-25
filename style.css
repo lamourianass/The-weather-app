@@ -169,6 +169,11 @@ body::before {
   padding: 10px;
   align-items: center;
   border-radius: 12px;
+  transition: 0.3s background;
+}
+
+.forecast-item:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .forecast-item-img {
