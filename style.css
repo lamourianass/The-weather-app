@@ -138,4 +138,6 @@ body::before {
   font-size: 30px;
 }
 
-
+.forecast-items-container {
+  display: flex;
+}
