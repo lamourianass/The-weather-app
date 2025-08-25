@@ -140,6 +140,7 @@ body::before {
 
 .forecast-items-container {
   display: flex;
+  gap: 15px;
 }
 
 .forecast-item {
