@@ -183,7 +183,7 @@ body::before {
 
 /* SECTION MESSAGE */
 
-.message-img {
+.section-message img {
   height: 180px;
   width: fit-content;
 }
