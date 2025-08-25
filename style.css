@@ -33,7 +33,6 @@ body::before {
 
 .regular-txt {
   font-weight: 400;
-
 }
 
 .main-container {
@@ -98,7 +97,6 @@ body::before {
 }
 
 .location-date-container {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,4 +106,15 @@ body::before {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.weather-summary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-summary-img {
+  width: 120px;
+  height: 120px;
 }
