@@ -133,3 +133,7 @@ body::before {
   align-items: center;
   gap: 6px;
 }
+
+.condition-item span {
+  font-size: 30px;
+}
