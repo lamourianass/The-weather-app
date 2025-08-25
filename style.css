@@ -141,7 +141,8 @@ body::before {
 .forecast-items-container {
   display: flex;
   gap: 15px;
-  overflow: scroll;
+  overflow-x: scroll;
+
   padding-bottom: 12px;
 }
 
@@ -151,6 +152,11 @@ body::before {
 
 .forecast-items-container::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 99px;
 }
 
