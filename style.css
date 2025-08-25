@@ -144,10 +144,10 @@ body::before {
 
 .forecast-item {
   min-width: 70px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .forecast-item-img {
   width: 35px;
   height: 35px;
-
 }
