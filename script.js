@@ -9,4 +9,6 @@ searchBtn.addEventListener('click', () => {
   }
 })
 
-cityInput.addEventListener('keydown', () => {})
+cityInput.addEventListener('keydown', (e) => {
+  console.log(e)
+})
