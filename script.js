@@ -40,13 +40,35 @@ async function getFetchData(endPoint, city) {
   return response.json()
 }
 
+function getWeatherIcon(id) {
+  if(id <= 232) return 'thunderstorm.svg'
+  if(id <= 321) return 'drizzle.svg'
+  if(id <= 531) return 'rain.svg'
+  if(id <= 622) return 'snow.svg'
+  if(id <= 781) return 'atmosphere.svg'
+  if(id <= 800) return 'clear.svg'
+  else return 'clouds.svg'
+
+}
+
+function getCurrentDate() {
+  const currentDate = new Date()
+  const options = {
+    weekday: 'short',
+    day: '2-digit',
+    month: 'short',
+  }
+  return currentDate.toLocaleDateString('en-GB', options)
+
+}
+
 async function updateWeatherInfo(city) {
   const weatherData = await getFetchData('weather', city)
   if (weatherData.cod != 200) {
     showDisplaySection(notFoundSection)
     return
   }
-  console.log(weatherData);
+
   const {
     name: country,
     main: { temp, humidity },
@@ -54,7 +76,18 @@ async function updateWeatherInfo(city) {
     wind: { speed }
   } = weatherData
 
+  countryTxt.textContent = country
+  tempTxt.textContent = Math.round(temp) + '°C'
+  conditionTxt.textContent = main
+  humidityValueTxt.textContent = humidity + '%'
+  windValueTxt.textContent = speed + ' M/s'
+  weatherSummaryImg.src = `assets/weather/${getWeatherIcon(id)}`
+  currentDateTxt.textContent = getCurrentDate()
+  await updateForecatsInfo()
   showDisplaySection(weatherInfoSection)
+}
+function updateForecatsInfo() {
+
 }
 
 function showDisplaySection(section) {
@@ -62,3 +95,4 @@ function showDisplaySection(section) {
     .forEach(section => section.style.display = 'none')
   section.style.display = 'flex'
 }
+
